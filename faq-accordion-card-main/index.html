@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+@import url('https://fonts.google.com/specimen/Kumbh+Sans');
+    
+    body{
+      max-width: 1440px;
+      background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: 'Kumbh Sans', sans-serif;
+      color: hsl(238, 29%, 16%);
+    }
+
+    .container{
+      max-width: 50%;
+      margin: 0 auto;
+      background-color: #fff;
+      margin-top: 150px;
+      border-radius: 1.25rem;
+      
+    }
+
+    .row{
+      display: flex;
+      flex-direction: row;
+      background: url(./images/bg-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: -348px;
+      background-size: 40rem;
+      background-position-y: -9rem;
+      height: 400px;
+    }
+
+    .col{
+      flex: 50%;
+      position: relative;
+    }
+
+    
+    .leftImg{
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      width: 100%;
+    }
+
+    .imagesRelative{
+      position: relative;
+    }
+
+    .womenImg{
+      width: 100%;
+    }
+
+    .womenImg img{
+      width: 100%;
+      margin-left: -4rem;
+    }
+
+    .boxImg{
+      position: absolute;
+      z-index: 1;
+      top: 37%;
+      left: -8px;
+      width: 9rem;
+    }
+
+      /* right */
+
+
+   
+
+    .right h2{
+      font-weight: 700; 
+      font-family: 'Kumbh Sans' sans-serif;
+      padding-top: 3rem;
+    }
+
+    .content{
+      font-family: 'Kumbh Sans', sans-serif;
+      Font-size: 12px;
+      padding: 0rem 4rem 0rem 0rem;
+    }
+
+    .content .contentItems{
+      padding-top: 15px;
+      position: relative;
+    }
+
+    .border{
+      border-bottom: thin solid hsl(240, 5%, 91%);
+    }
+
+    .content #arrow{
+
+      position: absolute;
+      right: 0;
+
+    }
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+   
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+    opacity: 0;
+    line-height: 18px;
+    margin-bottom:10px;
+    color: hsl(240, 6%, 50%);
+}
+
+    div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+div.accordion{
+  color: hsl(237, 12%, 33%);
+}
+
+div.accordion.active {
+  font-weight: 600;
+  color: hsl(237, 12%, 33%);
+}
+
+div.accordion.active  #arrow{
+ transform: rotate(180deg);
+}
+
+div.accordion:hover{
+  color:  hsl(14, 88%, 65%);
+}
+
+
+/* mobile */
+
+@media only screen and (max-width: 375px){
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    background: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-size: 14rem;
+    background-position-y: 1rem;
+    height: 450px;
+  }
+
+  .content{
+      font-family: 'Kumbh Sans', sans-serif;
+      Font-size: 12px;
+      padding: 0rem 1.5rem 0rem 1.5rem;
+      height: 350px;
+    }
+
+    .container{
+      max-width: 90%;
+    }
+
+    .right h2{
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .leftImg{
+      width: 75%;
+    }
+
+    .womenImg img{
+      width: 100%;
+      margin-left: 0rem;
+    }
+
+    .boxImg{
+      width: 6rem;
+      top: 35%;
+    }
+
+}
+
+
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="leftImg">
+          <div class="imagesRelative">
+          <div class="womenImg" style="overflow: hidden;">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="">
+        <div class="boxImg">
+          <img src="./images/illustration-box-desktop.svg" alt="">
+        </div>
+      </div>
+    </div>   
+      </div>
+      </div>
+      <div class="col right">
+       <h2>FAQ</h2>
+       <div class="content">
+        <div id="question1" class="contentItems">
+          <div class="accordion">
+         <span>How many team members can I invite?</span> <span id="arrow"><img src="./images/icon-arrow-down.svg" alt=""></span> 
+        </div>
+        <div class="panel"><p> You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</p> </div> 
+          <div class="border"></div>
+          </div>
+
+        <div id="question2" class="contentItems">
+          <div class="accordion">
+         <span>What is the maximum file upload size?</span> <span id="arrow"><img src="./images/icon-arrow-down.svg" alt=""></span>
+         </div>
+       <div class="panel"> <p> No more than 2GB. All files in your account must fit your allotted storage space.</p> </div> 
+          <div class="border"></div>
+          </div>
+
+        <div id="question3" class="contentItems">
+          <div class="accordion">
+         <span>How do I reset my password?</span> <span id="arrow"><img src="./images/icon-arrow-down.svg" alt=""></span> 
+          </div>
+          <div class="panel">   <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+          </div>
+          <div class="border"></div>
+          </div>
+
+        <div class="contentItems">
+          <div class="accordion">  <span>Can I cancel my subscription?</span> <span id="arrow"><img src="./images/icon-arrow-down.svg" alt=""></span> 
+          </div>
+          <div class="panel">   <p> Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+            <div class="border"></div>
+          </div>
+
+        <div class="contentItems">
+          <div class="accordion">  <span>Do you provide additional support?</span> <span id="arrow"><img src="./images/icon-arrow-down.svg" alt=""></span> 
+          </div>
+          <div class="panel">   <p>  Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+            <div class="border"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./index.js"></script>
+
+</body>
+</html>
