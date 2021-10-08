@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a{
+    font-family: 'Open Sans', sans-serif;  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+nav .logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+nav .logo .freeBtn{
+    text-decoration: none;
+    border: solid 1px hsl(322, 100%, 66%);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 3px;
+}
+
+nav .logo .freeBtn:hover{
+    color: hsl(321, 100%, 78%);
+    border: solid 1px hsl(321, 100%, 78%);
+}
+
+.mainContainer{
+    max-width: 100%;
+    padding-top: 9rem;
+    margin: 0 auto;
+}
+
+.mainText{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.mainText h1{
+    font-weight: 800;
+}
+
+.mainText .mainParagraph{
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+
+.mainText .mainParagraph p{
+    line-height: 1.3rem;
+    font-weight: 600;
+}
+
+
+.mainText .mainBtn{
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.mainText .mainBtn :hover{
+    border: solid 1px hsl(321, 100%, 78%);
+    background-color: hsl(321, 100%, 78%);
+}
+
+.mainText .mainBtn a{
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px hsl(322, 100%, 66%);
+    padding: 1.5rem 5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 7px 5px gainsboro;
+}
+
+
+.screenMockupsImg{
+   text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.screenMockupsImg img{
+    width: 70%;
+}
+
+.numbers{
+    display: flex;
+    margin: 3rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.numbers h1{
+    font-size: 6rem;
+}
+
+.numbers p{
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.bottomText{
+    margin: 20rem 0rem;
+}
+.bottomText h1{
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+}
+
+.bottomText .mainBtn{
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: center;
+}
+
+
+.bottomText .mainBtn a{
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px hsl(322, 100%, 66%);
+    padding: 1.5rem 5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 7px 5px gainsboro;
+}
+
+.bottomText .mainBtn a:hover{
+    border: solid 1px hsl(321, 100%, 78%);
+    background-color: hsl(321, 100%, 78%);
+}
+
+.growTogetherSection.mobile,
+.yourUsersSection.mobile
+{
+    display: none;
+}
+
+.growTogetherSection::before{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    top: -9rem;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.growTogetherSection{
+    position: relative;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.growTogetherSection::after{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: -17rem;
+    width: 100%;
+    height: 300px;
+}
+
+
+.growTogetherSection , .FlowingSection , .yourUsersSection{
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    height: 30rem;
+    text-align: left;
+    padding: 5rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.growTogetherSection .Image, 
+.FlowingSection .Image, 
+.yourUsersSection .Image{
+
+ width: 30%;
+ height: auto;
+
+}
+.growTogetherSection .Image img, 
+.FlowingSection .Image img, 
+.yourUsersSection .Image img{
+
+ width: 100%;
+ height: 100%;
+
+}
+.growTogetherSection .text, 
+.FlowingSection .text, 
+.yourUsersSection .text{
+    width: 39%;
+}
+
+.growTogetherSection .text h1, 
+.FlowingSection .text h1, 
+.yourUsersSection .text h1{
+   padding-bottom: 1rem;
+}
+
+.growTogetherSection .text p, 
+.FlowingSection .text p, 
+.yourUsersSection .text p{
+    line-height: 1.5rem;
+}
+
+
+.yourUsersSection::before{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat;
+    top: -9rem;
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+}
+
+.yourUsersSection{
+    position: relative;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.yourUsersSection::after{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat;
+    bottom: -18rem;
+    width: 100%;
+    background-size: 100%;
+    height: 300px;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    top: -9rem;
+    width: 100%;
+    background-size: 100%;
+    height: 300px;
+}
+
+
+footer{
+
+    background-color: hsl(192, 100%, 9%);
+    position: relative;
+}
+
+.footerContainer.mobile{
+    display: none;
+}
+
+
+.footerContainer{
+    display: flex;
+    width: 100%;
+    padding: 5rem;
+    justify-content: space-around;
+    z-index: 1;
+    color: #fff;
+}
+
+.footerContainer .section1{
+    width: 40%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+
+.footerContainer .section1 .logo{
+    background-color: #fff;
+    -webkit-mask: url(./images/logo.svg) no-repeat ;
+    mask: url(./images/logo.svg) no-repeat ;
+    padding-bottom: 5rem;
+}
+
+.footerContainer .section1 p{
+    line-height: 1.5rem;
+}
+
+.footerContainer .section1 p:nth-child(2){
+    padding-right: 2rem;
+}
+.footerContainer .section1 p:nth-child(3){
+    padding: 1rem 0rem;
+}
+
+.footerContainer .section1 #icon{
+    padding-right: 1rem;
+}
+
+.footerContainer .section1 .socialLinks{
+    margin-top: 4rem;
+} 
+.footerContainer .section1 .socialLinks span{
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+} 
+.footerContainer .section1 .socialLinks span:hover{
+   color:  hsl(210, 83%, 73%);
+} 
+
+.footerContainer .newsLetter{
+    width: 60%;
+    padding: 0rem 5rem;
+}
+
+.footerContainer .newsLetter h1{
+    text-transform: uppercase;
+    padding-bottom: 2.5rem
+}
+
+.footerContainer .newsLetter p{
+    line-height: 1.5rem;
+    width: 55%;
+}
+
+.footerContainer .newsLetter .subscribe{
+    margin-top: 3rem;
+    max-width: 100%;
+    height: 50px;
+}
+
+.footerContainer .newsLetter input{
+   padding: 10px;
+    height: 100%;
+   
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.footerContainer .newsLetter button{
+   height: 100%;
+   outline: none;
+   font-size: 16px;
+   font-weight: 600;
+   padding: 1rem 3rem;
+   margin-left: 3rem;
+   border-radius: 10px;
+   background: hsl(322, 100%, 66%);
+   cursor: pointer;
+   color: #fff;
+   text-decoration: none;
+}
+
+.footerContainer .newsLetter button:hover{
+    border: solid 1px hsl(321, 100%, 78%);
+    background-color: hsl(321, 100%, 78%);
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/* mobile */
+
+
+
+
+@media screen and (max-width: 375px) , (max-width: 768px) {
+
+    h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    p, a{
+        font-family: 'Open Sans', sans-serif;  
+        font-size: 14px;
+    }
+
+    nav .logo {
+        margin: 2rem;
+    }
+    nav .logo img{
+        width: 100px;
+        height: 20px;
+    }
+
+    nav .logo .freeBtn {
+        padding: 3px 10px;
+        font-size: 12px;
+    }
+
+    .mainContainer{
+        width: 100%;
+        padding-top: 5rem;
+    }
+    .mainText h1{
+        font-size: 25px;
+        padding: 1rem;
+    }
+
+    .mainText .mainParagraph {
+        width: 100%;
+        margin: 0 auto;
+        padding:  2rem;
+    }
+
+    .mainText .mainParagraph p {
+        font-size: 14px;
+    }
+
+    .screenMockupsImg img {
+        width: 90%;
+    }
+
+    .mainText .mainBtn {
+        margin: 0 auto;
+        padding: 1rem 0rem;
+    }
+
+    .mainText .mainBtn a {
+        padding: 1rem 2.5rem;
+        font-size: 14px;
+    }
+
+    .numbers {
+        flex-direction: column;
+        row-gap: 8rem;
+    }
+
+    .numbers h1 {
+        font-size: 4rem;
+    }
+
+    .growTogetherSection.desktop,
+    .yourUsersSection.desktop
+    {
+        display: none;
+    }
+    .growTogetherSection.mobile,
+    .yourUsersSection.mobile{
+        display: block;
+    }
+
+    .growTogetherSection , .FlowingSection , .yourUsersSection{
+        flex-direction: column;
+    }
+
+    .growTogetherSection .text, .FlowingSection .text, .yourUsersSection .text {
+    
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .growTogetherSection .text p, .FlowingSection .text p, .yourUsersSection .text p {
+        font-size: 14px;
+    }
+
+    .growTogetherSection, .FlowingSection, .yourUsersSection {
+        
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        height: fit-content;
+    }
+
+    .growTogetherSection .Image, .FlowingSection .Image, .yourUsersSection .Image {
+        width: 100%;
+    }
+
+    .growTogetherSection .text h1, .FlowingSection .text h1, .yourUsersSection .text h1 {
+        font-size: 22px;
+        margin-top: 5rem;
+    }
+
+
+    .growTogetherSection::before{
+        content: '';
+        position: absolute;
+        background: url(./images/bg-section-top-mobile-1.svg);
+        background-repeat: no-repeat;
+        top: -7rem;
+        left: 0rem;
+        background-size: 100%;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .growTogetherSection::after {
+        content: '';
+        position: absolute;
+        background: url(./images/bg-section-bottom-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        bottom: -18rem;
+        left: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .yourUsersSection::before {
+        content: '';
+        position: absolute;
+        background: url(./images/bg-section-top-mobile-2.svg);
+        background-repeat: no-repeat;
+        top: -6rem;
+        left: 0;
+        background-size: 100%;
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .yourUsersSection::after {
+        content: '';
+        position: absolute;
+        background: url(./images/bg-section-bottom-mobile-2.svg);
+        background-repeat: no-repeat;
+        bottom: -18rem;
+        left: 0;
+        width: 100%;
+        background-size: 100%;
+        height: 300px;
+    }
+    .bottomText {
+        margin: 10rem 1rem;
+    }
+
+    .bottomText h1 {
+       font-size: 25px;
+       padding: 1rem;
+    }
+
+    .bottomText  .mainBtn {
+        margin: 0 auto;
+        padding: 1rem 0rem;
+    }
+
+    .bottomText  .mainBtn a {
+        padding: 1rem 2.5rem;
+        font-size: 14px;
+    }
+
+    .footerContainer.desktop{
+        display: none;
+    }
+
+    .footerContainer.mobile{
+        display: block;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        padding: 0rem;
+        margin-top: 17rem;
+        text-align: left;
+    }
+
+
+    footer::before{
+        content: '';
+        position: absolute;
+        background: url(./images/bg-footer-top-mobile.svg);
+        background-repeat: no-repeat;
+        top: -3rem;
+        left: 0;
+        width: 100%;
+        background-size: 100%;
+        height: 300px;
+    }
+    
+
+    .footerContainer .newsLetter {
+        width: 100%;
+        padding: 5rem 3rem;
+        text-align: left;
+    }
+
+    .footerContainer .newsLetter h1 {
+        font-size: 25px;
+        padding-bottom: 1rem;
+    }
+
+    .footerContainer .newsLetter p {
+        line-height: 1.5rem;
+        width: 100%;
+    }
+
+    .footerContainer .newsLetter .subscribe {
+        text-align: right;
+    }
+
+    .footerContainer .newsLetter button {
+        margin-top: 1rem;
+    }
+
+
+    .footerContainer .section1 {
+        width: 100%;
+        padding: 3rem;
+        margin-top: 3rem;
+    }
+
+    .footerContainer .section1 p:nth-child(2) {
+        padding-right: 0rem;
+    }
+
+    .footerContainer .section1 .socialLinks {
+        margin-top: 2rem;
+    }
+
+    .footerContainer .section1 .socialLinks span {
+        font-size: 1.5rem;
+
+    }
+
+   
+}
