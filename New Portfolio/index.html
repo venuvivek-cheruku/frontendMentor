@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700">
+	<link rel="stylesheet" href="style.css">
+	<title>Venu Vivek Cheruku</title>
+</head>
+<body>
+
+	
+
+	<div class="container">
+		
+		<div class="bg-images">
+			<img src="./bg Images/HTML.svg" alt="t1" class="layer html-svg" data-speed="1">
+			<img src="./bg Images/CSS.svg" alt="t1" class="layer css-svg" data-speed="-2">
+			<img src="./bg Images/js.svg" alt="t1" class="layer js-svg" data-speed="3">
+
+			<!-- second page -->
+
+			<img src="./bg Images/shopify.png" alt="t1" class="layer shopify-svg" data-speed="1">
+			<img src="./bg Images/wordpressIcon2.png" alt="t1" class="layer wordpress-svg" data-speed="-2">
+			
+			<!-- third page -->
+			<img src="./bg Images/jquery.png" alt="t1" class="layer jquery-svg" data-speed="2">
+			<img src="./bg Images/angular.svg" alt="t1" class="layer angular-svg" data-speed="-1">
+			<img src="./bg Images/GSap.png	" alt="t1" class="layer greensock-svg" data-speed="1">
+		</div>
+
+		<section class="panel section-one">
+
+		<div class="section-title">
+			<div class="section-title-number">01</div>
+			<svg>
+				<symbol id="text-copy">
+				<text text-anchor="middle" x="50%" y="50%" class="text-line"> Home</text>
+				</symbol>
+				<g class="g-ants">
+				  <use xlink:href="#text-copy"
+					class="text-copy" id="outline"></use>
+				  <use xlink:href="#text-copy"
+					class="text-copy" id="fill"></use> 
+				</g>
+			  </svg>
+			</div>
+
+			<div class="main-text layer" data-speed="-2">
+				<div class="main-textBox ">Hi</div>
+				<h5 class="greeting-text "> My Name is</h5>
+				<h1 class="name "> VENU VIVEK CHERUKU</h1>
+				<h3 class="designation-text"> <span>I am</span>  &nbsp; <span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+				<a href="#">
+					<div class="scroll-down">  </div> 
+				  </a>
+			</div>
+<!-- 
+		<div class="main-text ">
+			<div class="main-textBox layer" data-speed="4">Hi</div>
+			<h5 class="greeting-text layer" data-speed="4"> My Name is</h5>
+			<h1 class="name layer" data-speed="2"> VENU VIVEK CHERUKU</h1>
+			<h3 class="designation-text layer" data-speed="-2"> <span>I am</span>  &nbsp; <span class="typed-text"></span><span class="cursor">&nbsp;</span></h3>
+		</div> -->
+
+	
+
+		</section>
+		<section class="panel section-two">
+			<div class="section-title">
+				<div class="section-title-number">02</div>
+				<svg>
+					<symbol id="text-copy-about">
+					<text text-anchor="middle" x="50%" y="50%" class="text-line"> About</text>
+					</symbol>
+					<g class="g-ants">
+					  <use xlink:href="#text-copy-about"
+						class="text-copy" id="outline"></use>
+					  <use xlink:href="#text-copy-about"
+						class="text-copy" id="fill"></use> 
+					</g>
+				  </svg>
+				</div>
+	
+				<div class="about-quote layer" data-speed="-2">
+					<div class="quote-box">
+						<p>I believe</p>
+					</div>
+					<div class="quote-content">
+					
+						<h3 id="quote">“When you are doing any work.. do it as worship, as the highest worship, and devote your whole life to it for the time being.”
+							</h3>
+							<p style="padding: 1rem; font-size: 1.1rem; color: rgb(255, 255, 255);">- Swami Vivekanandha</p>
+					</div>
+					<div class="scroll-more-about">
+						<a href="#">
+							<div class="scroll-down">  </div> 
+						</a>
+					</div>
+				</div>
+		</section>
+		<section class="panel section-three">
+		  THREE<h1>one</h1>
+		</section>
+		<section class="panel section-four">
+		  FOUR<h1>one</h1>
+		</section>
+		<section class="panel section-five">
+		  FIVE<h1>one</h1>
+		</section>
+	  
+
+	</div>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+	<script src="./index.js"></script>
+
+	
+    <script type="text/javascript">
+        
+        document.addEventListener("mousemove", parallax)
+
+     function parallax(e) {
+        this.querySelectorAll(".layer").
+        forEach(layer => {
+        var speed = layer.getAttribute("data-speed")
+        var x = (window.innerWidth - e.pageX * speed) / 100
+        var y = (window.innerWidth - e.pageY * speed) / 100
+        layer.style.transform = `translateX(${x}px)
+        translateY(${y}px)`
+    });
+}
+
+	</script>
+</body>
+</html>
